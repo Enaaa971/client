@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Landing Page | Jasa Service</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Jasa Service HP Enaaa</h1>
+            <p>Murah, Cepat, Dijamin Beres!</p>
+            <a href="#pesan" class="btn-cta">Order Sekarang</a>
+        </header>
+
+        <section class="fitur" data-aos="fade-up">
+            <h2>Kenapa pilih kami?</h2>
+            <div class="fitur-container">
+                <div class="box" data-aos="fade-up">
+                    <h3>Gratis Cek HP</h3>
+                    <p>Datang, dicek, dan konsultasi GRATIS tanpa bayar apapun.</p>
+                </div>
+                <div class="box" data-aos="fade-right">
+                    <h3>Cepat</h3>
+                    <p>Perbaikan 30-60 menit langsung beres!</p>
+                </div>
+                <div class="box" data-aos="fade-left">
+                    <h3>Garansi</h3>
+                    <p>Garansi 7 hari pemakaian normal, bebas biaya</p>
+                </div>
+            </div> 
+        </section>
+
+        <section id="pesan" class="form-pesan" data-aos="flip-left">
+            <h2>Form Order</h2>
+            <form onsubmit="prosesPesan(event)">
+                <input type="text" id="nama" placeholder="Nama Kamu" required />
+                <input type="tel" id="nohp" placeholder="No.HP/WA" required />
+                <textarea id="kerusakan" placeholder="Ceritakan masalah HP kamu..." required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>2025 Enaaa Service HP. All rights reversed.</p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
